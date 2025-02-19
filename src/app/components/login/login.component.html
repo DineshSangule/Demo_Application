@@ -1,0 +1,20 @@
+<div class="login-c">
+  <mat-card class="login-card">  
+
+    <h2>Login</h2>
+    <img src="mahaveer_info.png" alt="Logo" class="logo"> 
+
+    <mat-form-field class="full-width">
+      <mat-label>Username</mat-label>
+      <input matInput type="text" [(ngModel)]="username">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" [(ngModel)]="password">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" class="full-width" (click)="fnlogin()">Login</button>
+
+  </mat-card>  
+</div>

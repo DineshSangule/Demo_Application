@@ -1,0 +1,188 @@
+<mat-card class="add-new">
+  <!-- Toolbar Header -->
+  <mat-toolbar class="add">
+    <mat-icon aria-hidden="false" aria-label="menu icon">menu</mat-icon>
+    <span>Add New Order</span>
+  </mat-toolbar>
+
+  <!-- Customer Details -->
+  <mat-card class="customer-details">
+    <mat-card-title class="inner-title">Customer Details</mat-card-title>
+    <mat-card-content>
+      <mat-form-field appearance="outline">
+        <mat-label>Order Status</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let status of Status" [value]="status.value">
+            {{ status.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-card-content>
+
+    <mat-card-content>
+      <mat-form-field class="field-name" appearance="outline">
+        <mat-label>Customer Name</mat-label>
+        <input matInput placeholder="Enter customer name">
+      </mat-form-field>
+    </mat-card-content>
+
+    <mat-card-content>
+      <mat-form-field appearance="outline">
+        <mat-label>Mobile Number</mat-label>
+        <input matInput placeholder="Enter Mobile Number">
+      </mat-form-field>
+    </mat-card-content>
+
+    <mat-card-content>
+      <mat-form-field appearance="outline">
+        <mat-label>Alternate Number</mat-label>
+        <input matInput placeholder="Enter Alternate Number">
+      </mat-form-field>
+    </mat-card-content>
+
+    <mat-card-content>
+      <mat-form-field class="field-name" appearance="outline">
+        <mat-label>Address</mat-label>
+        <textarea matInput placeholder="Enter Address"></textarea>
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-content>
+      <button mat-raised-button class="main-btn" color="primary" [matMenuTriggerFor]="kycMenu">
+        Customer Kyc <mat-icon>arrow_drop_down</mat-icon>
+      </button>
+      <mat-menu #kycMenu="matMenu">
+        <button mat-menu-item *ngFor="let kyc of kycOption" (click)="selectKyc(kyc.name)">{{kyc.name}}</button>
+      </mat-menu>
+    </mat-card-content>
+  </mat-card>
+
+  
+
+  <!-- Mobile Details -->
+  <mat-card class="customer-details">
+    <mat-card-title class="inner-title">Mobile Device Information</mat-card-title>
+
+    <mat-card-content>
+      <mat-form-field appearance="outline">
+        <mat-label>Model Number</mat-label>
+        <input matInput placeholder="Enter Model Number">
+      </mat-form-field>
+    </mat-card-content>
+
+    <mat-card-content>
+      <mat-form-field appearance="outline">
+        <mat-label>Color</mat-label>
+        <input matInput placeholder="Enter Color">
+      </mat-form-field>
+    </mat-card-content>
+
+    <mat-card-content>
+      <mat-form-field class="field-name" appearance="outline">
+        <mat-label>Device Warranty Info</mat-label>
+        <textarea matInput placeholder="Enter Device Warranty Info"></textarea>
+      </mat-form-field>
+    </mat-card-content>
+
+    <mat-card-content class="upload-section">
+      <span class="add-pic">Add Mobile Picture</span>
+      <button mat-raised-button class="add-button" color="primary">
+        <mat-icon>add</mat-icon> 
+      </button>
+    </mat-card-content>
+  </mat-card>
+  
+  <mat-card class="customer-details">
+    <mat-card-title class="inner-title">Issue Details</mat-card-title>
+    <mat-card-content>
+      <mat-form-field class="field-name" appearance="outline">
+        <mat-label>Describe Problem</mat-label>
+        <textarea matInput placeholder="Describe Problem"></textarea>
+      </mat-form-field>
+    </mat-card-content>
+
+    <mat-card-content>
+      <mat-form-field appearance="outline">
+        <mat-label>Estimated Delivery Date</mat-label>
+        <input matInput [matDatepicker]="deliveryPicker" placeholder="mm/dd/yyyy">
+        <mat-datepicker-toggle matIconSuffix [for]="deliveryPicker"></mat-datepicker-toggle>
+        <mat-datepicker #deliveryPicker></mat-datepicker>
+
+      </mat-form-field>
+    </mat-card-content>
+  <mat-card-content>
+    <mat-form-field appearance="outline">
+      <mat-label>Estimated Delivery Time</mat-label>
+      <input matInput type="time" [(ngModel)]="estimatedDeliveryTime">
+      <mat-hint>HH:MM (24-hour format)</mat-hint>
+    </mat-form-field>
+  </mat-card-content>
+
+  <mat-card-content>
+    <mat-form-field appearance="outline">
+      <mat-label>Estimated Price</mat-label>
+      <input matInput placeholder="Estimated Price">
+    </mat-form-field>
+  </mat-card-content>
+  </mat-card>
+
+  <mat-card class="coustomer-details">
+    <mat-card-title class="inner-title">Accessries</mat-card-title>
+    <mat-card-content>
+      <span class="radio-acc">Power Adapter</span>
+      <mat-radio-group >
+        <mat-radio-button value="1">Yes</mat-radio-button>
+        <mat-radio-button value="2">No</mat-radio-button>
+      </mat-radio-group>
+    </mat-card-content>
+
+    <mat-card-content>
+      <span class="radio-acc">Sim Card</span>
+      <mat-radio-group>
+        <mat-radio-button value="1">Yes</mat-radio-button>
+        <mat-radio-button value="2">No</mat-radio-button>
+      </mat-radio-group>
+    </mat-card-content>
+
+    
+    <mat-card-content>
+      <span class="radio-acc">Back Cover</span>
+      <mat-radio-group>
+        <mat-radio-button value="1">Yes</mat-radio-button>
+        <mat-radio-button value="2">No</mat-radio-button>
+      </mat-radio-group>
+    </mat-card-content>
+
+    <mat-card-content>
+      <span class="radio-acc">Temperod Glass</span>
+      <mat-radio-group>
+        <mat-radio-button value="1">Yes</mat-radio-button>
+        <mat-radio-button value="2">No</mat-radio-button>
+      </mat-radio-group>
+    </mat-card-content>
+
+    <mat-card-content>
+        <mat-form-field class="field-name" appearance="outline">
+          <mat-label>Additional Information</mat-label>
+          <textarea matInput placeholder="Additional Information"></textarea>
+        </mat-form-field>
+      
+    </mat-card-content>
+
+  </mat-card>
+  <mat-card-content>
+    <button mat-raised-button class="main-btn" color="primary" [matMenuTriggerFor]="staffMenu">
+      Staff Assign To <mat-icon>arrow_drop_down</mat-icon>
+    </button>
+  
+    <mat-menu #staffMenu="matMenu">  <!-- ✅ Fixed reference (staffMenu) -->
+      <button mat-menu-item *ngFor="let staff of staffList" (click)="assignTo(staff.name)">
+        {{ staff.name }}
+      </button>
+    </mat-menu>
+  </mat-card-content>
+  
+  <mat-card-content>
+    <button mat-raised-button class="main-btn" color="primary">Add
+</button>
+  </mat-card-content>
+</mat-card>

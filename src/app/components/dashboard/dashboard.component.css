@@ -1,0 +1,59 @@
+mat-card {
+  width: 100%;
+  margin: 0 10px;
+  background-color: rgb(204, 150, 255);
+  text-align: center;
+}
+.title{
+  text-align: center;
+}
+p{
+  font-weight: bold;
+}
+.dashboard{
+  padding:20px;
+}
+/*.left{
+  text-align: Left;
+  padding: 10px;
+}
+.right{
+  text-align:right;
+  padding:10px;
+}
+.recent-card{
+  
+    width: 99%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  
+}*/
+.call-button{
+  display:flex;
+  justify-content: center;
+
+}
+.card-content{
+  display:flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  padding: 10px;
+  padding-right: 20px;
+  width:100%;
+  margin: 10px;
+  
+  }
+.card-container{
+  width: 98%;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  max-width: 100%;
+  margin: auto;
+}
+.recent-completed{
+ margin-left: 20px;
+}
+
+

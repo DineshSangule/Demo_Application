@@ -1,0 +1,177 @@
+<!---<p>DashBoard</p>
+<div class="dashboard-container" >
+    <div class="dashboard-card">
+        <div class="dashboard-title">12</div>
+        <div class="dashboard-content">Today Completed</div>
+    </div>
+    <div class="dashboard-card">
+        <div class="dashboard-title">54</div>
+        <div class="dashboard-content">Todays Picked Up</div>
+    </div>
+    <div class="dashboard-card">
+        <div class="dashboard-title">50</div>
+        <div class="dashboard-content">Todays New Device</div>
+    </div>
+    <div class="dashboard-card">
+        <div class="dashboard-title">10</div>
+        <div class="dashboard-content">Total Device </div>
+    </div>
+</div>
+<p>Recent Completed</p>
+    <div class="recent-completed"> 
+    <div class="customer-info">
+        <div class="dashboard-card">
+            <div class="aa">
+         <div class="name">Customer Name : Dinu</div>
+         <div class="Date">Date : 12 jan 2025</div> 
+         <div class="Model">Model : Vivo s1</div>
+         <div class="Charges">Charges : 500</div>
+        </div>
+        <button class="call-button">Call</button>
+      </div>
+      </div>
+    </div>-->
+<mat-toolbar>
+    <mat-icon aria-hidden="false" aria-label="menu icon" fontIcon="menu"></mat-icon>
+    <span>Dashboard</span>
+</mat-toolbar>
+
+<mat-grid-list [cols]="breakpoint" rowHeight="80" (window:resize)="onResize($event)">
+    <mat-grid-tile>
+        <mat-card>
+            <mat-card-content>
+                <div>
+                    <div class="title"><strong>547</strong></div>
+                    <div>Today's Picked Up</div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card>
+            <mat-card-content>
+                <div class="title"><strong>100</strong></div>
+                <div> Today's Completed</div>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card>
+            <mat-card-content>
+                <div class="title"><strong>600</strong></div>
+                <div>Total Devices</div>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <mat-card>
+            <mat-card-content>
+                <div class="title"><strong>800</strong></div>
+                <div>Today's Due</div>
+
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<!---<mat-card class="recent-card">
+        <mat-card-content class="card-content">
+            <span class="left">Dinesh Sangule</span>
+            <span class="Right">9th Jan 2025</span>
+        </mat-card-content>
+        <mat-card-content class="card-content">
+            <span class="left">Vivo S1</span>
+            <span class="Right">500 R</span>
+        </mat-card-content>
+        <div class="call-button">
+            <button mat-icon-button color="primary">
+                <mat-icon>call</mat-icon>
+              </button>
+        </div>
+      </mat-card> 
+
+      
+     
+      <mat-card class="card-container">
+       <mat-card-content class="card-content">
+        <span>Dinesh</span>
+        <mat-divider vertical></mat-divider>
+        <span>9 jan 2025</span>
+       </mat-card-content>
+       <mat-card-content class="card-content">
+        <span>Vivo S1</span>
+        <mat-divider vartical></mat-divider>
+        <span>500</span>
+       </mat-card-content>
+
+       <div class="call-button">
+        <button mat-icon-button color="primary">
+            <mat-icon>call</mat-icon>
+          </button>
+    </div>
+ </mat-card>--->
+
+
+<div class="recent-completed">
+    <p>Completed Device</p>
+</div>
+<mat-tab-group>
+    <mat-tab label="Yestrday Completed">
+        <mat-card class="card-container">
+            <mat-card-content class="card-content">
+                <span>Dinesh</span>
+                <mat-divider vertical="true"></mat-divider>
+                <span>9 jan 2025</span>
+            </mat-card-content>
+            <mat-card-content class="card-content">
+                <span>Vivo S1</span>
+                <mat-divider vartical="true"></mat-divider>
+                <span>500</span>
+            </mat-card-content>
+            <div class="call-button">
+                <button mat-icon-button color="primary">
+                    <mat-icon>call</mat-icon>
+                </button>
+            </div>
+        </mat-card>
+    </mat-tab>
+
+    <mat-tab label="Today Completed">
+        <mat-card class="card-container">
+            <mat-card-content class="card-content">
+                <span>Dinesh</span>
+                <mat-divider vertical></mat-divider>
+                <span>9 jan 2025</span>
+            </mat-card-content>
+            <mat-card-content class="card-content">
+                <span>Vivo S1</span>
+                <mat-divider vartical></mat-divider>
+                <span>500</span>
+            </mat-card-content>
+            <div class="call-button">
+                <button mat-icon-button color="primary">
+                    <mat-icon>call</mat-icon>
+                </button>
+            </div>
+        </mat-card>
+    </mat-tab>
+    <mat-tab label="Recent-Completed">
+        <mat-card class="card-container">
+            <mat-card-content class="card-content">
+                <span>Dinesh</span>
+                <mat-divider vertical></mat-divider>
+                <span>9 jan 2025</span>
+            </mat-card-content>
+            <mat-card-content class="card-content">
+                <span>Vivo S1</span>
+                <mat-divider vartical></mat-divider>
+                <span>500</span>
+            </mat-card-content>
+            <div class="call-button">
+                <button mat-icon-button color="primary">
+                    <mat-icon>call</mat-icon>
+                </button>
+            </div>
+        </mat-card>
+    </mat-tab>
+</mat-tab-group>

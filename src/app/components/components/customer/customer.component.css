@@ -1,0 +1,89 @@
+/*mat-card-title{
+    margin-left: 5px;
+}
+.inner-title
+{
+   padding-bottom: 5px;
+   padding: 10px;
+   padding-left: 1px;
+}
+.inner-title-info
+{
+   padding-bottom: 5px;
+   padding: 10px;
+   margin-left: -20px;
+}
+
+.customer-details{
+    padding:15px;   
+}
+.mobile-details{
+    padding:15px; 
+}
+.field-name
+{
+    width:30%;
+}
+.new{
+    font-weight: BOLD;
+}
+.add-pic{
+    padding :10px;
+}
+.add-button{
+    align-items: center;
+}*/
+
+.add-new {
+    margin: 20px;
+    padding: 20px;
+  }
+  .customer-details{
+    margin-bottom: 10px;
+  }
+  
+  .add {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .field-name {
+    width: 50%;
+  }
+  
+  
+  .upload-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .add-button {
+    display: flex;
+    align-items: center;
+  }
+  .inner-title{
+    padding:10px;
+  }
+  .radio-acc{
+    padding:10px;
+  }
+  .main-btn{
+    
+    padding:10px;
+    margin-top: 10px;
+    align-items: center;
+    border-radius: 5%;
+    background-color:rgb(186, 131, 231);
+    width:300px;
+    
+  }
+  @media (max-width: 600px) {
+    .main-btn {
+      width: 80%; /* Adjusts button width for smaller devices */
+    }
+  }
+
+  
+  
