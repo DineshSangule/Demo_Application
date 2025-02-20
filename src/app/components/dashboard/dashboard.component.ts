@@ -10,14 +10,17 @@ import {MatTreeModule} from '@angular/material/tree';
 import { MatTabsModule } from '@angular/material/tabs'; 
 import { MatChipsModule } from '@angular/material/chips';
 import { MatDatepickerModule } from '@angular/material/datepicker';
+import { RouterModule } from '@angular/router'; // ✅ Import RouterModule
+import { MatSidenavModule } from '@angular/material/sidenav'; // ✅ Import MatSidenavModule
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css'],
-  imports: [CommonModule, MatCardModule, MatGridListModule, MatToolbarModule, MatIconModule, MatDividerModule,MatTreeModule,MatTabsModule,MatChipsModule, MatDatepickerModule],  
+  imports: [MatSidenavModule,RouterModule,CommonModule, MatCardModule, MatGridListModule, MatToolbarModule, MatIconModule, MatDividerModule,MatTreeModule,MatTabsModule,MatChipsModule, MatDatepickerModule],  
 })
+
 export class DashboardComponent implements OnInit{
   
     ngVersion: string=VERSION.full;

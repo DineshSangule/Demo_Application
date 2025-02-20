@@ -1,0 +1,14 @@
+.header{
+    position:fixed;
+    background-color: rgba(58, 58, 43, 0.996);
+    z-index: 100;
+    display: flex;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(229, 215, 215); 
+}
+
+.space{
+    margin-right: 10px;
+}

@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .customer-details {
@@ -22,9 +22,9 @@
 }
 .add{
     position: Fixed;
+    margin-top: 50px;
     top: 0;
     left: 0;
-    
     width: 100%;
     z-index: 1000; 
     background-color: #ad8ada; 

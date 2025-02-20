@@ -7,7 +7,9 @@ import { CustomerComponent } from './components/components/customer/customer.com
 export const routes: Routes = [
     {path: '',component: LoginComponent},
     {path:'dashboard',component: DashboardComponent},
-    {path:'Add-New',component:CustomerComponent}
+    {path:'Add-New',component:CustomerComponent},
+    { path: '', redirectTo: '/dashboard', pathMatch: 'full' } // Default to Dashboard
+
 ]
 
 
