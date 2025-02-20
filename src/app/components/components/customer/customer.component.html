@@ -1,11 +1,9 @@
 <mat-card class="add-new">
-  <!-- Toolbar Header -->
   <mat-toolbar class="add">
     <mat-icon aria-hidden="false" aria-label="menu icon">menu</mat-icon>
     <span>Add New Order</span>
   </mat-toolbar>
 
-  <!-- Customer Details -->
   <mat-card class="customer-details">
     <mat-card-title class="inner-title">Customer Details</mat-card-title>
     <mat-card-content>
@@ -58,7 +56,6 @@
 
   
 
-  <!-- Mobile Details -->
   <mat-card class="customer-details">
     <mat-card-title class="inner-title">Mobile Device Information</mat-card-title>
 
@@ -101,8 +98,8 @@
     </mat-card-content>
 
     <mat-card-content>
-      <mat-form-field appearance="outline">
-        <mat-label>Estimated Delivery Date</mat-label>
+      <mat-form-field class="date" appearance="outline">
+        <mat-label>Delivery Date</mat-label>
         <input matInput [matDatepicker]="deliveryPicker" placeholder="mm/dd/yyyy">
         <mat-datepicker-toggle matIconSuffix [for]="deliveryPicker"></mat-datepicker-toggle>
         <mat-datepicker #deliveryPicker></mat-datepicker>
@@ -110,7 +107,7 @@
       </mat-form-field>
     </mat-card-content>
   <mat-card-content>
-    <mat-form-field appearance="outline">
+    <mat-form-field  appearance="outline">
       <mat-label>Estimated Delivery Time</mat-label>
       <input matInput type="time" [(ngModel)]="estimatedDeliveryTime">
       <mat-hint>HH:MM (24-hour format)</mat-hint>
@@ -125,7 +122,7 @@
   </mat-card-content>
   </mat-card>
 
-  <mat-card class="coustomer-details">
+  <mat-card class="customer-details">
     <mat-card-title class="inner-title">Accessries</mat-card-title>
     <mat-card-content>
       <span class="radio-acc">Power Adapter</span>
@@ -161,20 +158,19 @@
     </mat-card-content>
 
     <mat-card-content>
-        <mat-form-field class="field-name" appearance="outline">
+        <mat-form-field class="additional-info" appearance="outline">
           <mat-label>Additional Information</mat-label>
           <textarea matInput placeholder="Additional Information"></textarea>
         </mat-form-field>
       
     </mat-card-content>
 
-  </mat-card>
   <mat-card-content>
     <button mat-raised-button class="main-btn" color="primary" [matMenuTriggerFor]="staffMenu">
       Staff Assign To <mat-icon>arrow_drop_down</mat-icon>
     </button>
   
-    <mat-menu #staffMenu="matMenu">  <!-- ✅ Fixed reference (staffMenu) -->
+    <mat-menu #staffMenu="matMenu">  
       <button mat-menu-item *ngFor="let staff of staffList" (click)="assignTo(staff.name)">
         {{ staff.name }}
       </button>
@@ -185,4 +181,6 @@
     <button mat-raised-button class="main-btn" color="primary">Add
 </button>
   </mat-card-content>
+</mat-card>
+
 </mat-card>

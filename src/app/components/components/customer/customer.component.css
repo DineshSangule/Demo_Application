@@ -1,89 +1,89 @@
-/*mat-card-title{
-    margin-left: 5px;
-}
-.inner-title
-{
-   padding-bottom: 5px;
-   padding: 10px;
-   padding-left: 1px;
-}
-.inner-title-info
-{
-   padding-bottom: 5px;
-   padding: 10px;
-   margin-left: -20px;
-}
-
-.customer-details{
-    padding:15px;   
-}
-.mobile-details{
-    padding:15px; 
-}
-.field-name
-{
-    width:30%;
-}
-.new{
-    font-weight: BOLD;
-}
-.add-pic{
-    padding :10px;
-}
-.add-button{
-    align-items: center;
-}*/
-
 .add-new {
     margin: 20px;
     padding: 20px;
-  }
-  .customer-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.customer-details {
     margin-bottom: 10px;
-  }
-  
-  .add {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .field-name {
     width: 50%;
-  }
-  
-  
-  .upload-section {
+}
+
+.add,
+.upload-section {
     display: flex;
     align-items: center;
-    gap: 10px;
-  }
-  
-  .add-button {
-    display: flex;
-    align-items: center;
-  }
-  .inner-title{
-    padding:10px;
-  }
-  .radio-acc{
-    padding:10px;
-  }
-  .main-btn{
     
-    padding:10px;
+    gap: 10px;
+}
+
+.add-button {
+    display: flex;
+    align-items: center;
+}
+
+.inner-title,
+.radio-acc {
+    padding: 10px;
+}
+
+.add-pic {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.date {
+    width: 70%;
+}
+
+.main-btn {
+    padding: 10px;
     margin-top: 10px;
     align-items: center;
-    border-radius: 5%;
-    background-color:rgb(186, 131, 231);
-    width:300px;
-    
-  }
-  @media (max-width: 600px) {
-    .main-btn {
-      width: 80%; /* Adjusts button width for smaller devices */
-    }
-  }
+    border-radius: 5px;
+    background-color: rgb(185, 144, 219);
+    width: 300px;
+    text-align: center;
+}
 
-  
-  
+@media (min-width: 600px) {
+    .add-new {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .date{
+        width:40%;
+    }
+    .upload-section{
+        justify-content: center;
+    }
+    .main-btn{
+        width:40%;
+    }
+}
+
+@media (max-width: 600px) {
+    .add-new {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .customer-details,
+    .main-btn {
+        width: 90%;
+    }
+    .date{
+        width:80%;
+    }
+    
+}
