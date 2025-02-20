@@ -8,7 +8,7 @@ import { CustomerComponent } from './components/components/customer/customer.com
 
 @Component({
   selector: 'app-root',
-  imports: [FormsModule,CustomerComponent],
+  imports: [FormsModule,RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

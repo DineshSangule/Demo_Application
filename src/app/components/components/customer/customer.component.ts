@@ -11,13 +11,14 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 
 
 @Component({
   selector: 'app-customer',
   standalone: true,
-  imports: [ MatMenuModule,MatRadioModule, MatNativeDateModule,MatDatepickerModule,MatToolbarModule, MatIconModule,MatCardModule, CommonModule, FormsModule, MatFormFieldModule, MatSelectModule,MatInputModule], // ✅ Removed BrowserModule
+  imports: [ MatSidenavModule ,MatMenuModule,MatRadioModule, MatNativeDateModule,MatDatepickerModule,MatToolbarModule, MatIconModule,MatCardModule, CommonModule, FormsModule, MatFormFieldModule, MatSelectModule,MatInputModule], // ✅ Removed BrowserModule
   templateUrl: './customer.component.html',
   styleUrls: ['./customer.component.css'] 
 })
