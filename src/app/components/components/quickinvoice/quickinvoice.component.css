@@ -1,0 +1,21 @@
+.main{
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+}
+.card-content{
+    margin-top: 10px;
+}
+.btn-outside{
+    background-color: rgb(255, 94, 0);
+    color:white;
+    width: 30%;
+    padding: 7px;
+    
+
+}
+.btn-inside{
+    color:orangered;
+    padding:5px;
+    width:10%;
+}

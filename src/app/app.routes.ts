@@ -6,6 +6,7 @@ import { CustomerComponent } from './components/components/customer/customer.com
 import { HomePageComponent } from './components/components/home-page/home-page.component';
 import { RepairingStaffComponent } from './components/components/repairing-staff/repairing-staff.component';
 import { AddNewStaffComponent } from './components/components/add-new-staff/add-new-staff.component';
+import { QuickinvoiceComponent } from './components/components/quickinvoice/quickinvoice.component';
 
 export const routes: Routes = [
     {path: 'login',component: LoginComponent},
@@ -14,8 +15,10 @@ export const routes: Routes = [
     {path:'homepage',component:HomePageComponent},
     {path:'repairingstaff',component:RepairingStaffComponent},
     {path:'addstaff',component:AddNewStaffComponent},
+    {path:'quickinvoice',component:QuickinvoiceComponent},
     {path:'',redirectTo:'/login',pathMatch:'full'},
-    {path:'',redirectTo:'/addstaff',pathMatch:'full'}
+    {path:'',redirectTo:'/addstaff',pathMatch:'full'},
+    {path:'',redirectTo:'/quickinvoice',pathMatch:'full'}
 ]
 
 

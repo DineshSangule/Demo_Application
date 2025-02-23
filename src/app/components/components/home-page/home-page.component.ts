@@ -31,5 +31,9 @@ export class HomePageComponent {
   {
     this.router.navigate(['/login']);
   }
+  quickinvoice()
+  {
+    this.router.navigate(['/quickinvoice']);
+  }
 
 }

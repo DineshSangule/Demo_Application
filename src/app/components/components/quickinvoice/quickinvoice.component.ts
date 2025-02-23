@@ -5,16 +5,14 @@ import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { Router } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-add-new-staff',
-  imports: [MatInputModule,MatFormFieldModule,CommonModule,MatIconModule,MatToolbarModule, MatCardModule],
-  templateUrl: './add-new-staff.component.html',
-  styleUrl: './add-new-staff.component.css'
+  selector: 'app-quickinvoice',
+  imports: [FormsModule, ReactiveFormsModule ,MatInputModule,MatFormFieldModule,CommonModule,MatIconModule,MatToolbarModule, MatCardModule],
+  templateUrl: './quickinvoice.component.html',
+  styleUrl: './quickinvoice.component.css'
 })
-export class AddNewStaffComponent {
-
-  
+export class QuickinvoiceComponent {
 
 }
