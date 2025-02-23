@@ -27,7 +27,6 @@ export class LoginComponent {
  {
   if(this.username=="1"&&this.password=="1")
   {
-    alert("Login Successful!");
     this.router.navigate(['/dashboard']);
   }
   else

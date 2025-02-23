@@ -1,0 +1,34 @@
+<mat-card class="heading">
+    <div class="icon">
+        <button mat-fab aria-label="delete icon">
+            <mat-icon (click)="addnew()">add</mat-icon>
+  
+        </button>
+</div>
+
+<mat-card class="main"*ngFor="let profile of profile; let i=index">
+    <mat-card-content class="card-content">
+        <span>ID:{{profile.id}}</span>
+    <span>MobileNo:{{profile.mobileno}}</span>
+</mat-card-content>
+
+<mat-card-content class="card-content">
+
+    <span>Address:{{profile.address}}</span>
+    <span>Username:{{profile.username}}</span>
+
+</mat-card-content>
+<mat-card-content class="show-btn">
+<button mat-raised-button (click)="toggleDetails(i)">
+    {{profile.showDetails ?  'Hide Details' : 'Show Full Details'}}
+</button>
+</mat-card-content>
+
+<mat-card-content *ngIf="profile.showDetails" class="card-content">
+<span>Password:{{profile.password}}</span>   
+<span>Status:{{profile.status}}</span>
+</mat-card-content>
+
+
+</mat-card>
+</mat-card>

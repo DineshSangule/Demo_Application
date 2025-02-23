@@ -1,0 +1,29 @@
+.title{
+    text-align: center;
+    justify-content: center;
+    width:100%;
+    background-color:rgb(233, 118, 61);
+    margin-bottom: 20px;
+
+}
+.box{
+    display:flex;
+    text-align: center;
+    align-items: center;
+   padding: 10px;
+   margin-bottom: 20px;
+   
+
+}
+.log-out-btn{
+    background-color: rgb(235, 106, 106);
+    padding:10px;
+    width:20%;
+    border-radius: 15px;
+}
+.home-page{
+    margin-top: 50px;
+}
+.btn{
+    text-align: center;
+}

@@ -122,17 +122,17 @@
 </div>
 <mat-tab-group>
     <mat-tab label="Yestrday Completed">
-        <mat-card class="card-container">
-            <mat-card-content class="card-content">
-                <span>Dinesh</span>
-                <mat-divider vertical="true"></mat-divider>
-                <span>9 jan 2025</span>
+        <mat-card class="card-container" *ngFor="let yestrday of yestrday; let i=index">
+            <mat-card-content class="card-content" >
+                <span>Name:{{yestrday.name}}</span>
+                <span>Date:{{yestrday.date}}</span>
             </mat-card-content>
+
             <mat-card-content class="card-content">
-                <span>Vivo S1</span>
-                <mat-divider vartical="true"></mat-divider>
-                <span>500</span>
+                <span>Model:{{yestrday.model}}</span>
+                <span>Payment:{{yestrday.payment}}</span>
             </mat-card-content>
+
             <div class="call-button">
                 <button mat-icon-button color="primary">
                     <mat-icon>call</mat-icon>
@@ -142,17 +142,17 @@
     </mat-tab>
 
     <mat-tab label="Today Completed">
-        <mat-card class="card-container">
+        <mat-card class="card-container" *ngFor="let today of today; let i=index">
             <mat-card-content class="card-content">
-                <span>Dinesh</span>
-                <mat-divider vertical></mat-divider>
-                <span>9 jan 2025</span>
+                <span>Name:{{today.name}}</span>
+                <span>Date:{{today.date}}</span>
             </mat-card-content>
+
             <mat-card-content class="card-content">
-                <span>Vivo S1</span>
-                <mat-divider vartical></mat-divider>
-                <span>500</span>
+                <span>Model:{{today.model}}</span>
+                <span>Payment:{{today.payment}}</span>
             </mat-card-content>
+
             <div class="call-button">
                 <button mat-icon-button color="primary">
                     <mat-icon>call</mat-icon>
@@ -164,19 +164,20 @@
         <mat-card class="card-container">
             <mat-card-content class="card-content">
                 <span>Dinesh</span>
-                <mat-divider vertical></mat-divider>
                 <span>9 jan 2025</span>
             </mat-card-content>
+
             <mat-card-content class="card-content">
                 <span>Vivo S1</span>
-                <mat-divider vartical></mat-divider>
                 <span>500</span>
             </mat-card-content>
+
             <div class="call-button">
                 <button mat-icon-button color="primary">
                     <mat-icon>call</mat-icon>
                 </button>
             </div>
+            
         </mat-card>
     </mat-tab>
 </mat-tab-group>

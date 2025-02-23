@@ -1,0 +1,10 @@
+.add-staff{
+    margin-top: 50px;
+    text-align: center;
+}
+.add-btn{
+    background-color: rgb(239, 108, 104);
+    height: 50px;
+    width:20%;
+    border-radius: 15%;
+}

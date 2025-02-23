@@ -35,5 +35,50 @@ export class DashboardComponent implements OnInit{
     {
       this.breakpoint=(event.target.innerWidth <=600) ? 2:4;
     }
+
+    yestrday=[
+      {
+        name:'dinesh',
+        date:'9 jan 2025',
+        model:'Vivo s1',
+        payment:500
+      },
+      {
+        name:'dinesh',
+        date:'9 jan 2025',
+        model:'Vivo s1',
+        payment:500
+      },
+      {
+        name:'dinesh',
+        date:'9 jan 2025',
+        model:'Vivo s1',
+        payment:500
+
+      }
+    ];
+
+    today=[
+      {
+        name:'dinesh',
+        date:'9 jan 2025',
+        model:'Vivo s1',
+        payment:500
+      },
+      {
+        name:'dinesh',
+        date:'9 jan 2025',
+        model:'Vivo s1',
+        payment:500
+      },
+      {
+        name:'dinesh',
+        date:'9 jan 2025',
+        model:'Vivo s1',
+        payment:500
+
+      }
+    ];
+    
   }
 
