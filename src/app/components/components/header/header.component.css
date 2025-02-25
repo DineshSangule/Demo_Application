@@ -1,12 +1,12 @@
 .header{
     position:fixed;
-    background-color: rgba(58, 58, 43, 0.996);
+    background-color: #eb7449;
     z-index: 1000;
     display: flex;
     padding: 15px;
     font-size: 18px;
     font-weight: bold;
-    color: rgb(229, 215, 215); 
+    color: black; 
 }
 
 .space{

@@ -7,7 +7,7 @@
     margin-top: 10px;
 }
 .btn-outside{
-    background-color: rgb(255, 94, 0);
+    background-color: #fc8300;
     color:white;
     width: 30%;
     padding: 7px;
@@ -15,7 +15,7 @@
 
 }
 .btn-inside{
-    color:orangered;
+    color:#eb7449;
     padding:5px;
     width:10%;
 }

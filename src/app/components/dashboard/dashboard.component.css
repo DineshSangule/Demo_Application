@@ -1,8 +1,9 @@
 mat-card {
   width: 100%;
   margin: 0 10px;
-  background-color: rgb(204, 150, 255);
+  background-color:#eb7449;
   text-align: center;
+  color: white;
 }
 .title{
   text-align: center;

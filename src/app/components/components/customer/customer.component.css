@@ -27,7 +27,7 @@
     left: 0;
     width: 100%;
     z-index: 1000; 
-    background-color: #ad8ada; 
+    background-color: #eb7449; 
     color: white;
     padding: 20px;
 }
@@ -58,7 +58,7 @@
     margin-top: 10px;
     align-items: center;
     border-radius: 5px;
-    background-color: rgb(185, 144, 219);
+    background-color:  #eb7449;
     width: 300px;
     text-align: center;
 }

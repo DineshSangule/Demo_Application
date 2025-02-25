@@ -2,7 +2,7 @@
     text-align: center;
     justify-content: center;
     width:100%;
-    background-color:rgb(233, 118, 61);
+    background-color:#eb7449;
     margin-bottom: 20px;
 
 }
@@ -16,7 +16,7 @@
 
 }
 .log-out-btn{
-    background-color: rgb(235, 106, 106);
+    background-color: #eb7449;
     padding:10px;
     width:20%;
     border-radius: 15px;
