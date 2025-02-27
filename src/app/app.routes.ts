@@ -11,14 +11,17 @@ import { QuickinvoiceComponent } from './components/components/quickinvoice/quic
 export const routes: Routes = [
     {path: 'login',component: LoginComponent},
     {path:'dashboard',component: DashboardComponent},
-    {path:'Add-New',component:CustomerComponent},
+    {path:'add-new',component:CustomerComponent},
     {path:'homepage',component:HomePageComponent},
     {path:'repairingstaff',component:RepairingStaffComponent},
     {path:'addstaff',component:AddNewStaffComponent},
     {path:'quickinvoice',component:QuickinvoiceComponent},
+    {path:'',redirectTo:'/homepage',pathMatch:'full'},
     {path:'',redirectTo:'/login',pathMatch:'full'},
     {path:'',redirectTo:'/addstaff',pathMatch:'full'},
-    {path:'',redirectTo:'/quickinvoice',pathMatch:'full'}
+    {path:'',redirectTo:'/quickinvoice',pathMatch:'full'},
+    {path:'',redirectTo:'/repairingstaff',pathMatch:'full'},
+    {path:'',redirectTo:'/add-new',pathMatch:'full'}
 ]
 
 

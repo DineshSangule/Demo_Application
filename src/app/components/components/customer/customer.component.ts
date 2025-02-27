@@ -12,7 +12,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
-
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -23,6 +23,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
   styleUrls: ['./customer.component.css'] 
 })
 export class CustomerComponent {
+
+  constructor(private router:Router){}
   Status = [
     { value: 'PENDING', viewValue: 'PENDING' },
     { value: 'REPAIRED', viewValue: 'REPAIRED' },
@@ -49,4 +51,6 @@ export class CustomerComponent {
   assignTo(staffName: string) {
    
   }
+
+  
 }

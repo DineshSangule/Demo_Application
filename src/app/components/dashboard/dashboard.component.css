@@ -1,7 +1,7 @@
 mat-card {
   width: 100%;
   margin: 0 10px;
-  background-color:#eb7449;
+  background-color: hsl(15, 100%, 68%);
   text-align: center;
   color: white;
 }
@@ -13,6 +13,16 @@ p{
 }
 .dashboard{
   padding:20px;
+}
+.btn{
+  margin-top: 10px;
+  text-align: center;
+  padding: 1px;
+}
+.btn1{
+  background-color: #eb7449;
+  height: 40px;
+  border-radius: 20%;
 }
 /*.left{
   text-align: Left;

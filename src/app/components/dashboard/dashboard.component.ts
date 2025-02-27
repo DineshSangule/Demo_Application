@@ -10,8 +10,10 @@ import {MatTreeModule} from '@angular/material/tree';
 import { MatTabsModule } from '@angular/material/tabs'; 
 import { MatChipsModule } from '@angular/material/chips';
 import { MatDatepickerModule } from '@angular/material/datepicker';
-import { RouterModule } from '@angular/router'; // ✅ Import RouterModule
+import { RouteConfigLoadStart, RouterModule } from '@angular/router'; // ✅ Import RouterModule
 import { MatSidenavModule } from '@angular/material/sidenav'; // ✅ Import MatSidenavModule
+import { Router } from '@angular/router'; // ✅ CORRECT
+
 
 @Component({
   selector: 'app-dashboard',
@@ -25,7 +27,8 @@ export class DashboardComponent implements OnInit{
   
     ngVersion: string=VERSION.full;
     breakpoint: number=0;
-    constructor(){}
+
+    constructor(private router:Router){}
 
     ngOnInit()
     {
@@ -79,6 +82,12 @@ export class DashboardComponent implements OnInit{
 
       }
     ];
+
+    homepage()
+    {
+      this.router.navigate(['/homepage']);
+
+    }
     
   }
 

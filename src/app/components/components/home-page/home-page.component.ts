@@ -35,5 +35,14 @@ export class HomePageComponent {
   {
     this.router.navigate(['/quickinvoice']);
   }
+  staffmanage()
+  {
+    this.router.navigate(['/repairingstaff']);
+
+  }
+  order()
+  {
+    this.router.navigate(['/add-new'])
+  }
 
 }
