@@ -24,9 +24,11 @@ export class AppComponent {
   {
     this.router.events.subscribe(() =>
     {
-      this.showHeaderFooter=this.router.url!=='/login';
+      this.showHeaderFooter=this.router.url!=='/login' && this.router.url!=='/registration-page';
 
     });
+  
+    
   }
 
 }

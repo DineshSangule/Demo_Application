@@ -7,8 +7,10 @@ import { HomePageComponent } from './components/components/home-page/home-page.c
 import { RepairingStaffComponent } from './components/components/repairing-staff/repairing-staff.component';
 import { AddNewStaffComponent } from './components/components/add-new-staff/add-new-staff.component';
 import { QuickinvoiceComponent } from './components/components/quickinvoice/quickinvoice.component';
+import { RegistrationPageComponent } from './components/components/registration-page/registration-page.component';
 
 export const routes: Routes = [
+    {path:'registration-page',component:RegistrationPageComponent},
     {path: 'login',component: LoginComponent},
     {path:'dashboard',component: DashboardComponent},
     {path:'add-new',component:CustomerComponent},
@@ -16,12 +18,14 @@ export const routes: Routes = [
     {path:'repairingstaff',component:RepairingStaffComponent},
     {path:'addstaff',component:AddNewStaffComponent},
     {path:'quickinvoice',component:QuickinvoiceComponent},
-    {path:'',redirectTo:'/homepage',pathMatch:'full'},
+    {path:'',redirectTo:'/registration-page',pathMatch:'full'},
     {path:'',redirectTo:'/login',pathMatch:'full'},
+    {path:'',redirectTo:'/homepage',pathMatch:'full'},
     {path:'',redirectTo:'/addstaff',pathMatch:'full'},
     {path:'',redirectTo:'/quickinvoice',pathMatch:'full'},
     {path:'',redirectTo:'/repairingstaff',pathMatch:'full'},
-    {path:'',redirectTo:'/add-new',pathMatch:'full'}
+    {path:'',redirectTo:'/add-new',pathMatch:'full'},
+
 ]
 
 

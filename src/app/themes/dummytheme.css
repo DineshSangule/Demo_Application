@@ -4,8 +4,8 @@ html {
   color-scheme: light;
 
   /* Primary palette variables */
-  --mat-sys-primary: light-dark(#a23e17, #ffb59c);
-  --mat-sys-on-primary: light-dark(#ffffff, #5c1900);
+  --mat-sys-primary: light-dark(#fcc302, #fcc302);
+  --mat-sys-on-primary: light-dark(#fcc302, #5c1900);
   --mat-sys-primary-container: light-dark(#ffdbcf, #822700);
   --mat-sys-on-primary-container: light-dark(#390c00, #ffdbcf);
   --mat-sys-inverse-primary: light-dark(#ffb59c, #a23e17);
@@ -35,8 +35,8 @@ html {
   --mat-sys-on-tertiary-fixed-variant: light-dark(#544600, #544600);
 
   /* Neutral palette variables */
-  --mat-sys-background: light-dark(#fff8f6, #1b110e);
-  --mat-sys-on-background: light-dark(#241916, #f3ded8);
+  --mat-sys-background: light-dark(#fcc302, #fcc302);
+  --mat-sys-on-background: light-dark(#fcc302, #fcc302);
   --mat-sys-surface: light-dark(#fff8f6, #1b110e);
   --mat-sys-surface-dim: light-dark(#ead6d0, #1b110e);
   --mat-sys-surface-bright: light-dark(#fff8f6, #433632);
